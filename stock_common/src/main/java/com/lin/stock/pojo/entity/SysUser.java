@@ -2,6 +2,8 @@ package com.lin.stock.pojo.entity;
 
 import java.io.Serializable;
 import java.util.Date;
+
+import io.swagger.annotations.ApiModel;
 import lombok.Data;
 
 /**
@@ -9,6 +11,7 @@ import lombok.Data;
  * @TableName sys_user
  */
 @Data
+@ApiModel(description = "用户基本信息")
 public class SysUser implements Serializable {
     /**
      * 用户id

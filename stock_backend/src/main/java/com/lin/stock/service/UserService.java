@@ -5,6 +5,8 @@ import com.lin.stock.vo.req.LoginReqVo;
 import com.lin.stock.vo.resp.LoginRespVo;
 import com.lin.stock.vo.resp.R;
 
+import java.util.Map;
+
 public interface UserService {
     /**
      * 根据用户查询用户信息
@@ -21,4 +23,10 @@ public interface UserService {
      * @return
      */
     R<LoginRespVo> login(LoginReqVo vo);
+
+    /**
+     * 生成登录校验码的访问接口
+     * @return
+     */
+    R<Map> getCaptchaCode();
 }

@@ -19,4 +19,9 @@ public class LoginReqVo {
      * 验证码
      */
     private String code;
+
+    /**
+     * 保存redis随机的key,也就是sessionId
+     */
+    private String sessionId;
 }
